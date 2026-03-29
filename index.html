@@ -8,8 +8,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-* {margin:0; padding:0; box-sizing:border-box;}
-body {font-family:'Inter', sans-serif; color:#1f2933; background:#f5f7f6;}
+body {
+font-family:'Inter', sans-serif;
+margin:0;
+background:#f5f7f6;
+color:#1f2933;
+}
 
 header {
 position:fixed;
@@ -17,7 +21,7 @@ top:0;
 width:100%;
 background:white;
 padding:15px 30px;
-border-bottom:1px solid #e5e7eb;
+border-bottom:1px solid #ddd;
 z-index:1000;
 }
 
@@ -25,22 +29,25 @@ nav {
 display:flex;
 justify-content:space-between;
 align-items:center;
-max-width:1100px;
+max-width:1000px;
 margin:auto;
 }
 
 nav a {
 margin-left:20px;
 text-decoration:none;
-color:#374151;
+color:#333;
 font-weight:500;
 }
 
-.logo {font-weight:600;}
+.logo img {
+height:55px;
+object-fit:contain;
+}
 
 section {
 padding:90px 20px;
-max-width:1000px;
+max-width:900px;
 margin:auto;
 }
 
@@ -48,15 +55,10 @@ margin:auto;
 padding-top:120px;
 }
 
-.hero img {
-width:100%;
-border-radius:10px;
-margin-bottom:25px;
-}
-
-h1 {font-size:2.5rem; margin-bottom:15px;}
+h1 {font-size:2.5rem; margin-bottom:10px;}
 h2 {font-size:1.8rem; margin-bottom:20px;}
-p {color:#4b5563; margin-bottom:15px;}
+h3 {margin-bottom:8px; font-weight:600;}
+p {color:#555; line-height:1.6;}
 
 .btn {
 display:inline-block;
@@ -68,36 +70,22 @@ text-decoration:none;
 margin:10px 10px 0 0;
 }
 
-.grid {
-display:grid;
-gap:20px;
+.block {
+margin:40px 0;
+padding-bottom:30px;
+border-bottom:1px solid #ddd;
 }
 
-.services div {
-padding:20px;
-border-bottom:1px solid #e5e7eb;
-}
-
-.areas {
-columns:2;
-gap:40px;
-}
-
-.trust {
-display:grid;
-gap:15px;
-margin-top:20px;
-}
-
-.card {
-background:#f0ebe4;
-padding:20px;
-border-radius:10px;
+.number {
+font-size:0.9rem;
+color:#888;
+margin-bottom:10px;
+letter-spacing:1px;
 }
 
 footer {
 text-align:center;
-padding:30px;
+padding:40px;
 background:#eef2ef;
 margin-top:40px;
 }
@@ -108,7 +96,10 @@ margin-top:40px;
 
 <header>
 <nav>
-<div class="logo">Hardy Energy</div>
+<a href="#home" class="logo">
+<img src="IMG_6815.jpeg" alt="Hardy Energy Logo">
+</a>
+
 <div>
 <a href="#home">Home</a>
 <a href="#services">Services</a>
@@ -120,7 +111,6 @@ margin-top:40px;
 </header>
 
 <section id="home" class="hero">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="House">
 <h1>EPC Assessments Across Central Scotland</h1>
 <p>Fast, reliable Energy Performance Certificates for homeowners and landlords.</p>
 
@@ -131,40 +121,75 @@ margin-top:40px;
 <section id="services">
 <h2>Services</h2>
 
-<div class="services">
-<div><strong>01</strong> Homeowner EPCs</div>
-<div><strong>02</strong> Rental Property EPCs</div>
-<div><strong>03</strong> Island EPCs</div>
-<div><strong>04</strong> Agency EPCs</div>
-</div>
+<div class="block">01 Homeowner EPCs</div>
+<div class="block">02 Rental Property EPCs</div>
+<div class="block">03 Island EPCs</div>
+<div class="block">04 Agency EPCs</div>
 </section>
 
 <section id="areas">
 <h2>Areas Covered</h2>
-<p>Providing EPC assessments across Central Scotland and surrounding areas.</p>
+<p>
+Providing certified domestic and rental EPC assessments across Central Scotland.
+</p>
 
-<div class="areas">
-<p>Glasgow</p>
-<p>Stirling</p>
-<p>Dumfries</p>
-<p>Arran</p>
-<p>Edinburgh</p>
-<p>Falkirk</p>
-<p>Fort William</p>
-<p>Nearby Islands</p>
-</div>
+<p>
+Glasgow<br>
+Stirling<br>
+Dumfries<br>
+Arran<br>
+Edinburgh<br>
+Falkirk<br>
+Fort William<br>
+Nearby Islands
+</p>
 </section>
 
 <section id="why">
-<h2>Professional EPC Standards</h2>
+<h2>The Standard of Professional EPC Care</h2>
+<p>
+Hardy Energy Services provides direct, trustworthy energy assessments across Central Scotland. 
+We focus on accuracy, compliance, and speed to support your property goals.
+</p>
 
-<div class="trust">
-<div class="card">01 — Fast turnaround</div>
-<div class="card">02 — Clear pricing</div>
-<div class="card">03 — Certified professional</div>
-<div class="card">04 — Reliable communication</div>
-<div class="card">05 — Family-run business</div>
+<hr style="margin:40px 0; border:none; border-top:1px solid #ddd;">
+
+<div class="block">
+<div class="number">01</div>
+<h3>Swift Turnaround</h3>
+<p>
+Time is critical in property transactions. We deliver most EPC certificates within 24 hours 
+of the physical assessment, ensuring your sale or rental remains on schedule.
+</p>
 </div>
+
+<div class="block">
+<div class="number">02</div>
+<h3>EPCs & Retrofit Guidance</h3>
+<p>
+I provide certified Energy Performance Certificates (EPCs) and, as a qualified retrofit assessor, 
+clear, practical guidance on how to improve your home's energy efficiency over time.
+</p>
+</div>
+
+<div class="block">
+<div class="number">03</div>
+<h3>Certified Professionalism</h3>
+<p>
+As a certified EPC assessor, Collin Hardy brings professional expertise to every property. 
+We ensure full compliance with the latest Scottish energy standards and legislative requirements.
+</p>
+</div>
+
+<div class="block">
+<div class="number">04</div>
+<h3>Local Family Business</h3>
+<p>
+We are a family-run operation dedicated to serving homeowners and landlords across Central Scotland. 
+You can expect direct communication and a reliable, approachable service from start to finish.
+</p>
+</div>
+
 </section>
 
 <section id="contact">
