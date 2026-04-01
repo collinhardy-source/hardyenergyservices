@@ -13,7 +13,6 @@ font-family:'Inter', sans-serif;
 margin:0;
 background:#f5f7f6;
 color:#1f2933;
-padding-top:110px;
 }
 
 header {
@@ -21,7 +20,7 @@ position:fixed;
 top:0;
 width:100%;
 background:white;
-padding:10px 20px;
+padding:10px 16px;
 border-bottom:1px solid #ddd;
 z-index:1000;
 }
@@ -51,61 +50,55 @@ font-size:15px;
 padding:4px 6px;
 }
 
-nav a:hover {
-color:#2f5d50;
-}
-
 .logo img {
-height:60px;
+height:55px;
 object-fit:contain;
 }
 
 section {
-padding:30px 20px;
+padding:35px 16px;
 max-width:900px;
 margin:auto;
 scroll-margin-top:120px;
 }
 
-h1 {font-size:2.3rem; margin-bottom:8px;}
-h2 {font-size:1.6rem; margin-bottom:10px;}
-h3 {margin-bottom:4px; font-weight:600;}
-
-p {
-color:#555;
-line-height:1.5;
-margin-bottom:10px;
+.hero {
+padding-top:120px;
 }
+
+h1 {font-size:2rem; margin-bottom:8px;}
+h2 {font-size:1.5rem; margin-bottom:10px;}
+h3 {margin-bottom:4px; font-weight:600;}
+p {color:#555; line-height:1.5; font-size:14px;}
 
 .badge {
 font-weight:600;
 color:#2f5d50;
 margin-top:4px;
 font-size:13px;
-letter-spacing:0.5px;
 }
 
 .btn {
 display:inline-block;
 background:#2f5d50;
 color:white;
-padding:12px 20px;
-border-radius:8px;
+padding:10px 18px;
+border-radius:6px;
 text-decoration:none;
-margin:8px 8px 0 0;
+margin:8px 6px 0 0;
+font-size:14px;
 }
 
 .block {
-margin:12px 0;
+margin:14px 0;
 padding-bottom:8px;
 border-bottom:1px solid #ddd;
 }
 
 .number {
-font-size:0.8rem;
+font-size:0.75rem;
 color:#888;
 margin-bottom:3px;
-letter-spacing:1px;
 }
 
 footer {
@@ -113,14 +106,11 @@ text-align:center;
 padding:20px;
 background:#eef2ef;
 margin-top:20px;
+font-size:13px;
 }
 
 /* MOBILE */
 @media (max-width: 600px) {
-
-body {
-padding-top:160px;
-}
 
 nav {
 flex-direction: column;
@@ -129,28 +119,13 @@ align-items: flex-start;
 
 nav div {
 width: 100%;
-display: flex;
-flex-wrap: wrap;
 justify-content: flex-start;
 gap: 10px;
-margin-top: 8px;
-}
-
-nav a {
-font-size:15px;
-padding:6px 8px;
+margin-top: 6px;
 }
 
 .logo img {
-height:48px;
-}
-
-section {
-padding:25px 16px;
-}
-
-h1 {
-font-size:1.9rem;
+height:50px;
 }
 
 }
@@ -175,41 +150,30 @@ font-size:1.9rem;
 </nav>
 </header>
 
-<section id="home">
+<section id="home" class="hero">
 <h1>EPC Assessments Across Central Scotland</h1>
 <p class="badge">EPC & Retrofit Assessor • Ex-Forces</p>
 <p>I provide fast, reliable Energy Performance Certificates for homeowners and landlords.</p>
 
-<a class="btn" href="https://wa.me/447491329550">Book via WhatsApp</a>
+<a class="btn" href="https://wa.me/447491329550?text=Hi,%20I%20need%20an%20EPC.%0A%0APostcode:%20%0ABedrooms:%20%0APreferred%20date/time:">Book via WhatsApp</a>
 <a class="btn" href="mailto:Collin.hardy@hardyenergyservices.uk">Email me</a>
 </section>
 
 <section id="services">
 <h2>Services</h2>
 
-<div class="block">01 Homeowner EPCs</div>
-<div class="block">02 Rental Property EPCs</div>
-<div class="block">03 Island EPCs</div>
-<div class="block">04 Agency EPCs</div>
-<div class="block">05 2D / 3D Floorplans & Measured Kitchen Layouts</div>
+<div class="block">Homeowner EPCs</div>
+<div class="block">Rental Property EPCs</div>
+<div class="block">Island EPCs</div>
+<div class="block">Agency EPCs</div>
+<div class="block">2D / 3D Floorplans & Measured Layouts</div>
 
 </section>
 
 <section id="areas">
 <h2>Areas Covered</h2>
 <p>
-I provide certified domestic and rental EPC assessments across Central Scotland.
-</p>
-
-<p>
-Glasgow<br>
-Stirling<br>
-Dumfries<br>
-Arran<br>
-Edinburgh<br>
-Falkirk<br>
-Fort William<br>
-Nearby Islands
+Glasgow • Stirling • Dumfries • Arran • Edinburgh • Falkirk • Fort William • Nearby Islands
 </p>
 </section>
 
@@ -217,34 +181,30 @@ Nearby Islands
 <h2>About Me</h2>
 
 <div class="block">
-<div class="number">01</div>
 <h3>Experience</h3>
 <p>
-I have been carrying out EPCs and retrofit assessments for a few years, working across a range of properties for different companies. This experience has given me a strong understanding of how buildings perform and how to assess them accurately.
+I have been carrying out EPCs and retrofit assessments for a few years, working across a range of properties. This has given me a strong understanding of how buildings perform and how to assess them properly.
 </p>
 </div>
 
 <div class="block">
-<div class="number">02</div>
 <h3>Background</h3>
 <p>
-In my previous role, I served in the Royal Navy. That background shaped my work ethic, attention to detail, and reliability—qualities I bring to every assessment I carry out.
+In my previous role I served in the Royal Navy. That background shaped my work ethic, attention to detail, and reliability. That’s something I bring to every assessment.
 </p>
 </div>
 
 <div class="block">
-<div class="number">03</div>
 <h3>Approach</h3>
 <p>
-I focus on providing clear, honest assessments without overcomplicating things. Whether you’re selling, renting, or just need guidance, I aim to make the process straightforward and stress-free.
+I keep things straightforward. Clear, honest assessments without overcomplicating anything, whether you’re selling, renting, or just need guidance.
 </p>
 </div>
 
 <div class="block">
-<div class="number">04</div>
 <h3>Family-Run</h3>
 <p>
-I run the day-to-day work as part of a family-run business, allowing me to provide a personal, reliable service while maintaining a professional and well-organised approach.
+This is a family-run business, which means you deal directly with me and get a personal, reliable service every time.
 </p>
 </div>
 
@@ -254,7 +214,7 @@ I run the day-to-day work as part of a family-run business, allowing me to provi
 <h2>Book Your Assessment</h2>
 <p>Collin.hardy@hardyenergyservices.uk</p>
 
-<a class="btn" href="https://wa.me/447491329550">Book via WhatsApp</a>
+<a class="btn" href="https://wa.me/447491329550?text=Hi,%20I%20need%20an%20EPC.%0A%0APostcode:%20%0ABedrooms:%20%0APreferred%20date/time:">Book via WhatsApp</a>
 <a class="btn" href="mailto:Collin.hardy@hardyenergyservices.uk">Email me</a>
 </section>
 
