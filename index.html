@@ -13,6 +13,9 @@ font-family:'Inter', sans-serif;
 margin:0;
 background:#f5f7f6;
 color:#1f2933;
+
+/* 🔥 FIX: prevents header overlap */
+padding-top:110px;
 }
 
 header {
@@ -63,11 +66,7 @@ section {
 padding:50px 20px;
 max-width:900px;
 margin:auto;
-scroll-margin-top:140px; /* 🔥 FIXES HEADER OVERLAP */
-}
-
-.hero {
-padding-top:140px; /* 🔥 ensures title isn't hidden */
+scroll-margin-top:140px;
 }
 
 h1 {font-size:2.5rem; margin-bottom:10px;}
@@ -113,8 +112,12 @@ background:#eef2ef;
 margin-top:30px;
 }
 
-/* 🔥 MOBILE FIX */
+/* 🔥 MOBILE FIXES */
 @media (max-width: 600px) {
+
+body {
+padding-top:170px; /* adjusts for taller mobile header */
+}
 
 nav {
 flex-direction: column;
@@ -136,7 +139,11 @@ padding:8px 10px;
 }
 
 .logo img {
-height:55px;
+height:50px; /* smaller logo = smaller header */
+}
+
+h1 {
+font-size:2rem; /* better scaling on small screens */
 }
 
 }
@@ -161,7 +168,7 @@ height:55px;
 </nav>
 </header>
 
-<section id="home" class="hero">
+<section id="home">
 <h1>EPC Assessments Across Central Scotland</h1>
 <p class="badge">EPC & Retrofit Assessor • Ex-Forces</p>
 <p>I provide fast, reliable Energy Performance Certificates for homeowners and landlords.</p>
