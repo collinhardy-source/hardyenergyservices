@@ -29,17 +29,13 @@ nav {
 display:flex;
 justify-content:space-between;
 align-items:center;
-flex-wrap:wrap;
 max-width:1000px;
 margin:auto;
-gap:10px;
 }
 
 nav div {
 display:flex;
-flex-wrap:wrap;
-gap:10px;
-justify-content:flex-end;
+gap:18px;
 }
 
 nav a {
@@ -47,7 +43,6 @@ text-decoration:none;
 color:#333;
 font-weight:500;
 font-size:16px;
-padding:6px 8px;
 }
 
 nav a:hover {
@@ -60,7 +55,7 @@ object-fit:contain;
 }
 
 section {
-padding:50px 20px;
+padding:35px 20px;
 max-width:900px;
 margin:auto;
 scroll-margin-top:140px;
@@ -70,15 +65,27 @@ scroll-margin-top:140px;
 padding-top:140px;
 }
 
-h1 {font-size:2.5rem; margin-bottom:10px;}
-h2 {font-size:1.8rem; margin-bottom:15px;}
-h3 {margin-bottom:6px; font-weight:600;}
+h1 {
+font-size:2.5rem;
+margin-bottom:10px;
+}
 
-p, .block p {
+h2 {
+font-size:1.8rem;
+margin-bottom:10px;
+}
+
+h3 {
 font-size:16px;
-line-height:1.6;
+margin-bottom:4px;
+font-weight:600;
+}
+
+p {
+font-size:16px;
 color:#555;
-margin:0;
+line-height:1.5;
+margin:6px 0;
 }
 
 .badge {
@@ -86,44 +93,80 @@ font-weight:600;
 color:#2f5d50;
 margin-top:5px;
 font-size:14px;
-letter-spacing:0.5px;
 }
 
 .btn {
 display:inline-block;
 background:#2f5d50;
 color:white;
-padding:14px 26px;
+padding:12px 22px;
 border-radius:8px;
 text-decoration:none;
-margin:10px 10px 0 0;
+margin:8px 8px 0 0;
 }
 
 .block {
-margin:20px 0;
-padding-bottom:12px;
+margin:14px 0;
+padding-bottom:8px;
 border-bottom:1px solid #ddd;
 }
 
 .number {
-font-size:0.85rem;
+font-size:0.8rem;
 color:#888;
-margin-bottom:5px;
-letter-spacing:1px;
+margin-bottom:3px;
 }
 
 footer {
 text-align:center;
-padding:30px;
+padding:20px;
 background:#eef2ef;
-margin-top:30px;
+margin-top:20px;
 }
 
-/* 🔥 ONLY CHANGE IS HERE */
+/* 🔥 MOBILE FIX — CLEAN STACK (NO CUTTING) */
 @media (max-width: 600px) {
 
+nav {
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.logo {
+margin-bottom: 10px;
+}
+
+nav div {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 6px;
+}
+
+nav a {
+display: block;
+width: 100%;
+padding: 6px 0;
+font-size: 15px;
+}
+
+.logo img {
+height: 50px;
+}
+
+header {
+padding: 10px 10px;
+}
+
+/* 🔥 ensure content never hides */
 .hero {
-padding-top:200px;
+padding-top: 170px;
+}
+
+section {
+padding: 30px 16px;
 }
 
 }
@@ -134,7 +177,7 @@ padding-top:200px;
 
 <header>
 <nav>
-<a href="https://www.qrcodechimp.com/page/hes341" class="logo" target="_blank">
+<a href="#" class="logo">
 <img src="IMG_6815.jpeg" alt="Hardy Energy Logo">
 </a>
 
@@ -150,7 +193,9 @@ padding-top:200px;
 
 <section id="home" class="hero">
 <h1>EPC Assessments Across Central Scotland</h1>
+
 <p class="badge">EPC & Retrofit Assessor • Ex-Forces</p>
+
 <p>I provide fast, reliable Energy Performance Certificates for homeowners and landlords.</p>
 
 <a class="btn" href="https://wa.me/447491329550">Book via WhatsApp</a>
@@ -160,19 +205,18 @@ padding-top:200px;
 <section id="services">
 <h2>Services</h2>
 
-<div class="block"><p>01 Homeowner EPCs</p></div>
-<div class="block"><p>02 Rental Property EPCs</p></div>
-<div class="block"><p>03 Island EPCs</p></div>
-<div class="block"><p>04 Agency EPCs</p></div>
-<div class="block"><p>05 2D / 3D Floorplans & Measured Kitchen Layouts</p></div>
+<div class="block">Homeowner EPCs</div>
+<div class="block">Rental Property EPCs</div>
+<div class="block">Island EPCs</div>
+<div class="block">Agency EPCs</div>
+<div class="block">2D / 3D Floorplans & Measured Layouts</div>
 
 </section>
 
 <section id="areas">
 <h2>Areas Covered</h2>
-<p>
-I provide certified domestic and rental EPC assessments across Central Scotland.
-</p>
+
+<p>Central Scotland including:</p>
 
 <p>
 Glasgow<br>
@@ -190,15 +234,13 @@ Nearby Islands
 <h2>About Me</h2>
 
 <div class="block">
-<div class="number">01</div>
 <h3>Experience</h3>
 <p>
-I have been carrying out EPCs and retrofit assessments for a few years, working across a range of properties for different companies. This experience has given me a strong understanding of how buildings perform and how to assess them accurately.
+I have been carrying out EPCs and retrofit assessments for a few years across a range of properties, giving me a strong understanding of how buildings perform.
 </p>
 </div>
 
 <div class="block">
-<div class="number">02</div>
 <h3>Background</h3>
 <p>
 In my previous role I served in the Royal Navy. That background shaped my work ethic, attention to detail, and reliability. That’s something I bring to every assessment.
@@ -206,18 +248,16 @@ In my previous role I served in the Royal Navy. That background shaped my work e
 </div>
 
 <div class="block">
-<div class="number">03</div>
 <h3>Approach</h3>
 <p>
-I focus on providing clear, honest assessments without overcomplicating things. Whether you’re selling, renting, or just need guidance, I aim to make the process straightforward and stress-free.
+I provide clear, honest assessments without overcomplicating things. Whether you’re selling, renting, or just need guidance, I keep the process straightforward.
 </p>
 </div>
 
 <div class="block">
-<div class="number">04</div>
 <h3>Family-Run</h3>
 <p>
-I run the day-to-day work as part of a family-run business, allowing me to provide a personal, reliable service while maintaining a professional and well-organised approach.
+A personal, reliable service with a professional and organised approach.
 </p>
 </div>
 
@@ -225,6 +265,7 @@ I run the day-to-day work as part of a family-run business, allowing me to provi
 
 <section id="contact">
 <h2>Book Your Assessment</h2>
+
 <p>Collin.hardy@hardyenergyservices.uk</p>
 
 <a class="btn" href="https://wa.me/447491329550">Book via WhatsApp</a>
